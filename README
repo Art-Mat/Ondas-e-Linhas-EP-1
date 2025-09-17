@@ -1,0 +1,11 @@
+Repositório para compartilhamento dos códigos utilizados na solução do EP1 da disciplina de Ondas e Linhas.
+
+As respostas foram separados em duas secções:
+
+- Analítica: códigos desenvolvidos em linguagem C levando em consideração as especificidades das linhas. Para o caso do capacitor, resolveu-se o sistema através da transformada de Laplace e então a solução obtida foi implementada no código.
+
+- Simulação: utilizou-se LTSpice para desenvolver as simulações e comparar com os resultados obtidos com o método apresentado anteriormente.
+
+Cada solução pode ser encontrada na pasta destinada a ela com o mesmo nome de sua secção.
+
+Visando simplificar a compilação do código de solução analítica, há um arquivo shell que promove a compilação dos arquivos e executa o código para o NUSP definido nele. Para ambientes baseados em Linux, o comando "chmod +x solve.sh" é necessário para dar permissão de execução ao script.

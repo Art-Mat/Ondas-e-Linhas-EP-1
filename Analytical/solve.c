@@ -43,6 +43,15 @@ int main(int argc, char *argv[])
 	printf("Resistência: %f Ohm/m \n", inductance * nusp_params->attenuation * nusp_params->prop_velocity);
 	printf("Condutância: %f mS/m \n", capacitance * nusp_params->attenuation * nusp_params->prop_velocity * 1e3);
 
+	printf("\n");
+	printf("QUESTÃO 2\n");
+	// Como os parâmetros Z_0 e v da linha se mantêm os mesmos da anterior, podemos reutilizar C e L
+	printf("C_10: %f pF\n", capacitance * (nusp_params->line_length / 10) * 1e12);
+	printf("C_20: %f pF\n", capacitance * (nusp_params->line_length / 20) * 1e12);
+	printf("L_10: %f nH\n", inductance * (nusp_params->line_length / 10) * 1e9);
+	printf("L_20: %f nH\n", inductance * (nusp_params->line_length / 20) * 1e9);
+	
+
 	free(nusp_params);
 
 	return 0;
